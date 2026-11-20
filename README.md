@@ -84,7 +84,7 @@ The package has one action.
 
 - **What it changes:** `linkPreviews` in `store.json`. The service restarts, so Jumble is unreachable for a few seconds; open pages keep working once it's back.
 - **Repeat safety:** idempotent.
-- **When to leave it off:** when Jumble is published over Tor or a public domain to keep the server's IP private, or when you don't want strangers who reach Jumble making the server fetch pages. With previews off, link cards stay empty for every visitor, whatever their in-app **Link previews** setting.
+- **When to leave it off:** when Jumble is published over Tor or a public domain to keep the server's IP private, or when anyone you don't trust can reach it: they can make the server fetch pages from its own IP address. With previews off, link cards stay empty for every visitor, whatever their in-app **Link previews** setting.
 
 ## Tasks
 

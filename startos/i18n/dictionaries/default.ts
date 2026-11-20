@@ -16,10 +16,10 @@ const dict = {
 
   // actions/linkPreviews.ts, init/linkPreviewsTask.ts
   'Fetch link previews': 9,
-  'Your server fetches the title and image for links in the notes you read.': 10,
+  "Your server fetches the title and image for links in notes. Anyone who can open Jumble can use this to learn your server's IP address.": 10,
   'Choose whether your server fetches titles and images for links in notes. Off by default.': 11,
-  "With link previews on, anyone who can open Jumble can make your server request web pages, and those sites see your server's IP address. That includes visitors over Tor, so leave this off if you publish Jumble to hide where your server is.": 12,
-  'Choose whether your server fetches link previews': 13,
+  "Anyone who can open Jumble, over Tor too, can use link previews to learn your server's IP address by linking to a site they run. They can also have your server load web pages of their choosing, and those requests come from your IP address, not theirs. Leave this off unless only people you trust can reach Jumble, or you intend to run a public instance anyway.": 12,
+  "Choose whether to turn on link previews, which can reveal your server's IP address": 13,
 } as const
 
 /**

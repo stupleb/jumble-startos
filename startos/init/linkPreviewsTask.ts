@@ -12,7 +12,9 @@ export const linkPreviewsTask = sdk.setupOnInit(async (effects) => {
     await sdk.action.clearTask(effects, 'jumble:link-previews')
   } else {
     await sdk.action.createOwnTask(effects, linkPreviews, 'important', {
-      reason: i18n('Choose whether your server fetches link previews'),
+      reason: i18n(
+        "Choose whether to turn on link previews, which can reveal your server's IP address",
+      ),
     })
   }
 })
