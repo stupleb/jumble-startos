@@ -15,7 +15,7 @@ Your Nostr account, relays and settings are kept in the browser you use, not on 
 1. Run **Link Previews** and choose whether your server should fetch link previews. See **Link previews** below before you decide. Until you choose, previews are off and the task stays on the service page.
 2. Open the **Web UI**.
 3. Sign in with a browser signing extension, a remote signer (bunker), or your private key, or create a new account. An extension or a remote signer keeps your private key out of the page.
-4. Jumble starts with a set of public relays. To read and post through relays you run yourself, such as a relay on this server, add their addresses under **Settings** → **Relays** in Jumble.
+4. Jumble starts with a set of public relays. To read and post through relays you run yourself, such as a relay on this server, add their addresses under **Settings** → **Relays** → **Read & Write Relays** in Jumble. A relay at a local address, such as one ending in `.local`, only connects from that list or when you open its feed.
 
 ## Link previews
 
@@ -42,3 +42,4 @@ You can change your mind any time by running **Link Previews** again. Each perso
 - Trust scores on profiles and people search are looked up on jumble.social's servers, as in every copy of Jumble.
 - Translation, media uploads and "Login with Google" use outside services, and only when you turn them on or use them.
 - Onion links get no preview, even with link previews on.
+- **Share profile** gives a jumble.social link, not one on your server.

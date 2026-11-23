@@ -2,8 +2,8 @@ FROM --platform=$BUILDPLATFORM docker.io/library/node:24.22.1-alpine AS web
 
 RUN apk add --no-cache git
 
-ARG JUMBLE_VERSION=v26.11.1
-ARG JUMBLE_COMMIT=f4ab69e4c9ee75c5fb0d8d18a53747de2b4a9d6f
+ARG JUMBLE_VERSION=v26.11.2
+ARG JUMBLE_COMMIT=55c7d26753fc2b0e5940cc462358016179b557e1
 RUN git clone --branch ${JUMBLE_VERSION} --depth 1 https://github.com/CodyTseng/jumble.git /app \
     && test "$(git -C /app rev-parse HEAD)" = "${JUMBLE_COMMIT}"
 
